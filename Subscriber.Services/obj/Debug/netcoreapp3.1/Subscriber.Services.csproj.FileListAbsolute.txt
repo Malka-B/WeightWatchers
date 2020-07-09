@@ -6,7 +6,9 @@ C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\obj\Debug\netcore
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.AssemblyInfo.cs
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.dll
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.pdb
-C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.csproj.CopyComplete
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Drop.sql
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Subscription_Create.sql
@@ -31,6 +33,4 @@ C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcore
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Subscription_Drop.sql
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Create.sql
 C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Drop.sql
-C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Messages.dll
-C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Messages.pdb
-C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.csproj.CopyComplete
+C:\Users\User\source\repos\Weight Watchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.csproj.CoreCompileInputs.cache

@@ -407,6 +407,19 @@
           "lib/netstandard2.0/NServiceBus.Core.dll": {}
         }
       },
+      "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.1.0",
+          "NServiceBus": "[7.2.3, 8.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "NServiceBus.Heartbeat/3.0.1": {
         "type": "package",
         "dependencies": {
@@ -1496,7 +1509,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "NServiceBus": "7.3.0"
+          "Microsoft.Extensions.DependencyInjection": "3.1.5",
+          "NServiceBus": "7.3.0",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "compile": {
           "bin/placeholder/Messages.dll": {}
@@ -1512,7 +1527,9 @@
           "AutoMapper": "10.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Messages": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "3.1.5",
           "NServiceBus": "7.3.0",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1",
           "NServiceBus.Heartbeat": "3.0.1",
           "NServiceBus.Persistence.Sql": "6.0.1",
           "NServiceBus.RabbitMQ": "5.2.0",
@@ -2209,6 +2226,25 @@
         "tools/init.ps1",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+      "sha512": "kR3MxL5znYP71KZhbvRXYAu9uGqt0anxrbrtxM/ZfhO7viB09T+dtJOGHjISUUVfaRw55ORbzkATvcTlzZ/qBQ==",
+      "type": "package",
+      "path": "nservicebus.extensions.dependencyinjection/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "NServiceBus.png",
+        "lib/net461/NServiceBus.Extensions.DependencyInjection.dll",
+        "lib/net461/NServiceBus.Extensions.DependencyInjection.pdb",
+        "lib/net461/NServiceBus.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.xml",
+        "nservicebus.extensions.dependencyinjection.1.0.1.nupkg.sha512",
+        "nservicebus.extensions.dependencyinjection.nuspec"
       ]
     },
     "NServiceBus.Heartbeat/3.0.1": {
@@ -5718,7 +5754,9 @@
       "Microsoft.EntityFrameworkCore.Relational >= 3.1.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.5",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.5",
+      "Microsoft.Extensions.DependencyInjection >= 3.1.5",
       "NServiceBus >= 7.3.0",
+      "NServiceBus.Extensions.DependencyInjection >= 1.0.1",
       "NServiceBus.Heartbeat >= 3.0.1",
       "NServiceBus.Persistence.Sql >= 6.0.1",
       "NServiceBus.RabbitMQ >= 5.2.0",
@@ -5797,9 +5835,17 @@
             "target": "Package",
             "version": "[3.1.5, )"
           },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[3.1.5, )"
+          },
           "NServiceBus": {
             "target": "Package",
             "version": "[7.3.0, )"
+          },
+          "NServiceBus.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           },
           "NServiceBus.Heartbeat": {
             "target": "Package",

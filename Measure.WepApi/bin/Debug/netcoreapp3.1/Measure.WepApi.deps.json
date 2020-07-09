@@ -30,8 +30,10 @@
           "Measure.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
+          "Microsoft.Extensions.DependencyInjection": "3.1.5",
           "Microsoft.IdentityModel": "7.0.0",
           "NServiceBus": "7.3.0",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1",
           "NServiceBus.Extensions.Hosting": "1.0.1",
           "NServiceBus.Heartbeat": "3.0.1",
           "NServiceBus.Persistence.Sql": "6.0.1",
@@ -803,6 +805,21 @@
           "lib/netstandard2.0/NServiceBus.Core.dll": {}
         }
       },
+      "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "3.1.5",
+          "NServiceBus": "7.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "NServiceBus.Extensions.Hosting/1.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Hosting": "3.0.0",
@@ -1569,7 +1586,9 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Measure.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
+          "Microsoft.Extensions.DependencyInjection": "3.1.5",
           "NServiceBus": "7.3.0",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1",
           "NServiceBus.Heartbeat": "3.0.1",
           "NServiceBus.Persistence.Sql": "6.0.1",
           "NServiceBus.RabbitMQ": "5.2.0",
@@ -1587,7 +1606,9 @@
           "AutoMapper": "10.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Messages": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "3.1.5",
           "NServiceBus": "7.3.0",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1",
           "NServiceBus.Heartbeat": "3.0.1",
           "NServiceBus.Persistence.Sql": "6.0.1",
           "NServiceBus.RabbitMQ": "5.2.0",
@@ -1602,7 +1623,9 @@
       },
       "Messages/1.0.0": {
         "dependencies": {
-          "NServiceBus": "7.3.0"
+          "Microsoft.Extensions.DependencyInjection": "3.1.5",
+          "NServiceBus": "7.3.0",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "runtime": {
           "Messages.dll": {}
@@ -3521,6 +3544,13 @@
       "sha512": "sha512-w+IyuMJePrUNfP9j3VdzgFgOJ4l09Gyx2IEmEhPPHfOWjJ8QJgqwS9dh1zpMzDBm9Z3riGt6b/7Hd0I0/LbF8g==",
       "path": "nservicebus/7.3.0",
       "hashPath": "nservicebus.7.3.0.nupkg.sha512"
+    },
+    "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kR3MxL5znYP71KZhbvRXYAu9uGqt0anxrbrtxM/ZfhO7viB09T+dtJOGHjISUUVfaRw55ORbzkATvcTlzZ/qBQ==",
+      "path": "nservicebus.extensions.dependencyinjection/1.0.1",
+      "hashPath": "nservicebus.extensions.dependencyinjection.1.0.1.nupkg.sha512"
     },
     "NServiceBus.Extensions.Hosting/1.0.1": {
       "type": "package",

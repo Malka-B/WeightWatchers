@@ -1,9 +1,15 @@
 ﻿using Microsoft.Extensions.Configuration;
 using NServiceBus;
+using Subscriber.Services;
 using System;
 using System.Data.SqlClient;
 using System.IO;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Subscriber.Data;
+using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using Subscriber.Data.Profiles;
 
 namespace SubscriberHandler
 {
@@ -23,6 +29,20 @@ namespace SubscriberHandler
 
             var endpointConfiguration = new EndpointConfiguration(GetQueue("queueName"));
 
+            var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
+            containerSettings.ServiceCollection.AddScoped<ISubscriberService,SubscriberService>();
+            containerSettings.ServiceCollection.AddScoped<ISubscriberRepository, SubscriberRepository>();
+
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new SubscriberProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            containerSettings.ServiceCollection.AddSingleton(mapper);
+
+            containerSettings.ServiceCollection.AddDbContext<WeightWatchersContext>(
+                  options => options.UseSqlServer(configuration.GetConnectionString("WeightWatchersDBConnectionString")));
             endpointConfiguration.EnableOutbox();
             endpointConfiguration.EnableInstallers();
 

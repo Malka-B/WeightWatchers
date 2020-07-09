@@ -14,5 +14,7 @@ namespace Subscriber.Services
         Task<int> LoginAsync(string email, string password);
         Task UpdateBMIAsync(UpdateMeasure message);
         Task<bool> CardExistAsync(int cardId);
+        Task<bool> ValidateLoginAsync(string email, string password);
+        Task<bool> IsEmailValiAsync(string email);
     }
 }

@@ -37,62 +37,54 @@ namespace Subscriber.Data
         public async Task<CardModel> GetCardAsync(int id)
         {
             CardEntity cardEntity = await _weightWatchersContext.Card.
-                Include(s => s.SubscriberEntity)
+                Include(s => s.Subscriber)
                 .FirstOrDefaultAsync(c => c.Id == id);
 
-            if (cardEntity != null)
-            {
-                SubscriberEntity subscriberEntity = await _weightWatchersContext.Subscriber
-                                                //.Include(s => s.CardEntity)
-                                                .FirstOrDefaultAsync(s => s.Id == cardEntity.SubscriberId);
-
-                CardModel cardModel = _mapper.Map<CardModel>(subscriberEntity);
-                return cardModel;
-            }
-            throw new Exception();
+            CardModel cardModel = _mapper.Map<CardModel>(cardEntity);
+            return cardModel;
 
         }
 
-
+        public async Task<bool> IsEmailValiAsync(string email)
+        {
+            SubscriberEntity subscriberEntity = await _weightWatchersContext.Subscriber
+                                                .FirstOrDefaultAsync(s => s.Email == email);
+            if (subscriberEntity != null)
+            {
+                return false;
+            }
+            return true;
+        }
 
         public async Task<int> LoginAsync(string email, string password)
         {
             SubscriberEntity subscriberEntity = await _weightWatchersContext.Subscriber
-                                                //.Include(s => s.CardEntity)
                                                 .FirstOrDefaultAsync(s => s.Email == email
                                                 && s.Password == password);
-            //search guid id
-            if (subscriberEntity != null)
-            {
-                //return subscriberEntity.CardEntity.Id;
-            }
-            throw new Exception();
+
+            CardEntity cardEntity = await _weightWatchersContext.Card
+                                   .FirstOrDefaultAsync(c => c.SubscriberId == subscriberEntity.Id);
+            return cardEntity.Id;
         }
 
         public async Task<bool> RegisterAsync(SubscriberModel subscriberModel)
         {
             SubscriberEntity subscriberEntity = _mapper.Map<SubscriberEntity>(subscriberModel);
 
-            var s = await _weightWatchersContext.Subscriber
-                                                .FirstOrDefaultAsync(s =>
-                                                s.Email == subscriberEntity.Email);
-            if (s == null)
+            subscriberEntity.Id = Guid.NewGuid();
+            CardEntity cardEntity = new CardEntity
             {
-                subscriberEntity.Id = Guid.NewGuid();
-                CardEntity cardEntity = new CardEntity
-                {
-                    OpenDate = DateTime.Now,
-                    BMI = 0,
-                    Height = subscriberModel.Height,
-                    UpdateDate = DateTime.Now
-                };
-               // subscriberEntity.CardEntity = cardEntity;
-
-                await _weightWatchersContext.Subscriber.AddAsync(subscriberEntity);
-                await _weightWatchersContext.SaveChangesAsync();
-                return true;
-            }
-            return false;
+                OpenDate = DateTime.Now,
+                BMI = 0,
+                Height = subscriberModel.Height,
+                UpdateDate = DateTime.Now,
+                SubscriberId = subscriberEntity.Id
+            };
+            
+            await _weightWatchersContext.Card.AddAsync(cardEntity);
+            await _weightWatchersContext.Subscriber.AddAsync(subscriberEntity);
+            await _weightWatchersContext.SaveChangesAsync();
+            return true;
         }
 
 
@@ -101,8 +93,21 @@ namespace Subscriber.Data
         {
             CardEntity card = await _weightWatchersContext.Card
                 .FirstOrDefaultAsync(c => c.Id == message.CardId);
+            float BMI = ((float)(message.Weight / (((decimal)(card.Height / 100)) * ((decimal)(card.Height / 100)))));
+            card.BMI = BMI;
+            await _weightWatchersContext.SaveChangesAsync();
+        }
 
-            card.BMI = ((float)(card.Weight / ((card.Height / 100) * (card.Height / 100))));
+        public async Task<bool> ValidateLoginAsync(string email, string password)
+        {
+            SubscriberEntity subscriber = await _weightWatchersContext.Subscriber
+                .FirstOrDefaultAsync(s => s.Email == email
+                                       && s.Password == password);
+            if (subscriber != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -44,32 +44,25 @@ namespace Weight_Watchers.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<int>> LoginAsync([FromBody] LoginDTO login)
         {
-            try
+            int cardId = await _subscriberService.LoginAsync(login.Email, login.Password);
+            if (cardId != -1)
             {
-                int cardId = await _subscriberService.LoginAsync(login.Email, login.Password);
                 return Ok(cardId);
             }
-            catch
-            {
-                return Unauthorized();
-            }
+            return Unauthorized();
         }
 
         [HttpGet("card")]
         public async Task<ActionResult<CardDTO>> GetCardAsync([FromQuery] int id)
         {
-            try
+
+            CardModel cardModel = await _subscriberService.GetCardAsync(id);
+            if (cardModel != null)
             {
-                CardModel cardModel = await _subscriberService.GetCardAsync(id);
                 CardDTO cardDTO = _mapper.Map<CardDTO>(cardModel);
                 return Ok(cardDTO);
             }
-
-            catch
-            {
-                return BadRequest();
-            }
-
+            return BadRequest();
         }
 
         //GET /tracking/:cardId? page=<>&size=<>

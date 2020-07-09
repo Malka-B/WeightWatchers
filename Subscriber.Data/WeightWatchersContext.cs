@@ -18,7 +18,7 @@ namespace Subscriber.Data
 
         public DbSet<SubscriberEntity> Subscriber { get; set; }
         public DbSet<CardEntity> Card { get; set; }
-        public DbSet<TrackingEntity> Trackings { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

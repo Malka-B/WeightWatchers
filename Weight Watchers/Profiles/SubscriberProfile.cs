@@ -18,17 +18,13 @@ namespace Subscriber.Data.Profiles
             CreateMap<SubscriberModel, SubscriberEntity>();
             CreateMap<CardModel, CardDTO>();
             CreateMap<CardDTO, CardModel>();
-            CreateMap<CardEntity, CardModel>();
+            CreateMap<CardEntity, CardModel>()
+                .ForMember(destination => destination.FirstName, option => option.MapFrom(src =>
+                src.Subscriber.FirstName))
+                .ForMember(destination => destination.LastName, option => option.MapFrom(src =>
+                 src.Subscriber.LastName));
             CreateMap<CardModel, SubscriberEntity>();
-            //CreateMap<SubscriberEntity, CardModel>()
-            //    .ForMember(destination => destination.Id, option => option.MapFrom(src =>
-            //    src.CardEntity.Id))
-            //    .ForMember(destination => destination.BMI, option => option.MapFrom(src =>
-            //    src.CardEntity.BMI))
-            //    .ForMember(destination => destination.Height, option => option.MapFrom(src =>
-            //    src.CardEntity.Height))
-            //    .ForMember(destination => destination.Weight, option => option.MapFrom(src =>
-            //    src.CardEntity.Weight));
+           
         }
     }
 }

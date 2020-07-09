@@ -26,8 +26,8 @@ namespace Subscriber.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("BMI")
-                        .HasColumnType("int");
+                    b.Property<float>("BMI")
+                        .HasColumnType("real");
 
                     b.Property<int>("Height")
                         .HasColumnType("int");
@@ -35,21 +35,18 @@ namespace Subscriber.Data.Migrations
                     b.Property<DateTime>("OpenDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("SubscriberEntityId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("SubscriberId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Weight")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Weight")
+                        .HasColumnType("decimal(18,4)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SubscriberEntityId");
+                    b.HasIndex("SubscriberId");
 
                     b.ToTable("Card");
                 });
@@ -77,41 +74,13 @@ namespace Subscriber.Data.Migrations
                     b.ToTable("Subscriber");
                 });
 
-            modelBuilder.Entity("Subscriber.Data.Entities.TrackingEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("BMI")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CardId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Comments")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("Weight")
-                        .HasColumnType("decimal(18,4)");
-
-                    b.Property<int>("trend")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Trackings");
-                });
-
             modelBuilder.Entity("Subscriber.Data.Entities.CardEntity", b =>
                 {
-                    b.HasOne("Subscriber.Data.Entities.SubscriberEntity", "SubscriberEntity")
+                    b.HasOne("Subscriber.Data.Entities.SubscriberEntity", "Subscriber")
                         .WithMany()
-                        .HasForeignKey("SubscriberEntityId");
+                        .HasForeignKey("SubscriberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

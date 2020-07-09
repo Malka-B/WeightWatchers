@@ -11,5 +11,8 @@ namespace SubscriberHandler
         public int MeasureId { get; set; }
 
         public bool IsBMIUpdated { get; set; }
+
+        public bool IsTrackingUpdated { get; set; }
+        
     }
 }

@@ -13,10 +13,10 @@ namespace Weight_Watchers.DTO
 
         public string LastName { get; set; }
 
-        public int BMI { get; set; }
+        public float BMI { get; set; }
 
         public int Height { get; set; }
 
-        public int Weight { get; set; }
+        public decimal Weight { get; set; }
     }
 }

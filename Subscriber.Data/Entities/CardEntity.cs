@@ -22,7 +22,7 @@ namespace Subscriber.Data.Entities
 
         public Guid SubscriberId { get; set; }
 
-        public virtual SubscriberEntity SubscriberEntity { get; set; }
+        public virtual SubscriberEntity Subscriber { get; set; }
 
     }
 }

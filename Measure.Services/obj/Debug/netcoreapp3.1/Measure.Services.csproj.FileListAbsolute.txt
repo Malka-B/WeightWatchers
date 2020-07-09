@@ -6,6 +6,9 @@ C:\Users\User\source\repos\Weight Watchers\Measure.Services\obj\Debug\netcoreapp
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\obj\Debug\netcoreapp3.1\Measure.Services.AssemblyInfo.cs
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\obj\Debug\netcoreapp3.1\Measure.Services.dll
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\obj\Debug\netcoreapp3.1\Measure.Services.pdb
+C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\source\repos\Weight Watchers\Measure.Services\obj\Debug\netcoreapp3.1\Measure.Services.csproj.CopyComplete
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Drop.sql
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Subscription_Create.sql
@@ -30,7 +33,4 @@ C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Subscription_Drop.sql
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Create.sql
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Drop.sql
-C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\Messages.dll
-C:\Users\User\source\repos\Weight Watchers\Measure.Services\bin\Debug\netcoreapp3.1\Messages.pdb
 C:\Users\User\source\repos\Weight Watchers\Measure.Services\obj\Debug\netcoreapp3.1\Measure.Services.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\Weight Watchers\Measure.Services\obj\Debug\netcoreapp3.1\Measure.Services.csproj.CopyComplete

@@ -23,22 +23,35 @@ namespace Subscriber.Services
 
         public async Task<CardModel> GetCardAsync(int id)
         {
-            return await _subscriberRepository.GetCardAsync(id);
+            bool isCardExist = await _subscriberRepository.CardExistAsync(id);
+            if (isCardExist)
+            {
+                return await _subscriberRepository.GetCardAsync(id);
+            }
+            return null;
         }
 
-       
+
 
         public async Task<int> LoginAsync(string email, string password)
         {
-
-            return await _subscriberRepository.LoginAsync(email, password);
+            bool isLoginValidate = await _subscriberRepository.ValidateLoginAsync(email, password);
+            if (isLoginValidate)
+            {
+                return await _subscriberRepository.LoginAsync(email, password);
+            }
+            return -1;
         }
 
         public async Task<bool> RegisterAsync(SubscriberModel subscriberModel)
         {
             //subscriberModel.Id = Guid.NewGuid();
-
-            return await _subscriberRepository.RegisterAsync(subscriberModel);
+            bool isEmailValid = await _subscriberRepository.IsEmailValiAsync(subscriberModel.Email);
+            if (isEmailValid)
+            {
+                return await _subscriberRepository.RegisterAsync(subscriberModel);
+            }
+            return false;
         }
 
         public async Task<bool> CardExistAsync(int cardId)
