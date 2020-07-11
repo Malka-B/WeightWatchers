@@ -8,7 +8,7 @@ namespace Measure.Services.Models
     {
         public int CardId { get; set; }
 
-        public decimal Weight { get; set; }
+        public float Weight { get; set; }
 
         public DateTime Date { get; set; }
 

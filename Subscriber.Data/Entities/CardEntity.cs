@@ -13,10 +13,9 @@ namespace Subscriber.Data.Entities
 
         public float BMI { get; set; }
 
-        public int Height { get; set; }
-
-        [Column(TypeName = "decimal(18,4)")]
-        public decimal Weight { get; set; }
+        public float Height { get; set; }
+        
+        public float Weight { get; set; }
 
         public DateTime UpdateDate { get; set; }
 

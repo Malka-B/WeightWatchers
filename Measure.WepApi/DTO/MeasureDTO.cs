@@ -12,6 +12,6 @@ namespace Measure.WepApi.DTO
         public int CardId { get; set; }
 
         [Range(5,300)]
-        public decimal weight { get; set; }
+        public float weight { get; set; }
     }
 }

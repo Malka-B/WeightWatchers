@@ -89,12 +89,14 @@ namespace Subscriber.Data
 
 
 
-        public async Task UpdateBMIAsync(UpdateMeasure message)
+        public async Task UpdateBMIAsync(UpdateBMI message)
         {
             CardEntity card = await _weightWatchersContext.Card
                 .FirstOrDefaultAsync(c => c.Id == message.CardId);
-            float BMI = ((float)(message.Weight / (((decimal)(card.Height / 100)) * ((decimal)(card.Height / 100)))));
-            card.BMI = BMI;
+            
+            card.BMI = message.Weight / (card.Height  * card.Height );
+            card.UpdateDate = DateTime.Now;
+            card.Weight = message.Weight;
             await _weightWatchersContext.SaveChangesAsync();
         }
 

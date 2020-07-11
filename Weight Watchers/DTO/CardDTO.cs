@@ -15,8 +15,8 @@ namespace Weight_Watchers.DTO
 
         public float BMI { get; set; }
 
-        public int Height { get; set; }
+        public float Height { get; set; }
 
-        public decimal Weight { get; set; }
+        public float Weight { get; set; }
     }
 }

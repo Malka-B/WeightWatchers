@@ -10,9 +10,8 @@ namespace Measure.Data.Entities
         public int Id { get; set; }
 
         public int CardId { get; set; }
-
-        [Column(TypeName = "decimal(18,4)")]
-        public decimal Weight { get; set; }
+       
+        public float Weight { get; set; }
 
         public DateTime Date { get; set; }
 

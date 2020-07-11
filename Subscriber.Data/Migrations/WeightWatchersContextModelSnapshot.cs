@@ -29,8 +29,8 @@ namespace Subscriber.Data.Migrations
                     b.Property<float>("BMI")
                         .HasColumnType("real");
 
-                    b.Property<int>("Height")
-                        .HasColumnType("int");
+                    b.Property<float>("Height")
+                        .HasColumnType("real");
 
                     b.Property<DateTime>("OpenDate")
                         .HasColumnType("datetime2");
@@ -41,8 +41,8 @@ namespace Subscriber.Data.Migrations
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<decimal>("Weight")
-                        .HasColumnType("decimal(18,4)");
+                    b.Property<float>("Weight")
+                        .HasColumnType("real");
 
                     b.HasKey("Id");
 

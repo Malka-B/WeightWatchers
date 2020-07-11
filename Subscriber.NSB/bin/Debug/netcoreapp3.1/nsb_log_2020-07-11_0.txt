@@ -1,0 +1,43 @@
+﻿2020-07-11 23:40:51.212 INFO  Logging to 'C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-11 23:40:51.462 INFO  Auditing processed messages to 'audit'
+2020-07-11 23:40:51.566 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-11 23:40:52.384 INFO  Executing 'C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-11 23:40:52.852 INFO  Executing saga creation scripts:
+C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql
+2020-07-11 23:40:53.526 WARN  Could not determine message type from message header 'Messages.Commands.UpdateMeasure, Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. MessageId: bb310cd0-addf-419c-bb8a-abf300ba67fd
+2020-07-11 23:40:53.551 ERROR Moving message 'bb310cd0-addf-419c-bb8a-abf300ba67fd' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message bb310cd0-addf-419c-bb8a-abf300ba67fd
+ ---> System.Exception: Could not determine type for node: 'UpdateMeasure'.
+   at NServiceBus.XmlDeserialization.InferNodeType(XmlNode node, Object parent)
+   at NServiceBus.XmlDeserialization.Process(XmlNode node, Object parent, Type nodeType)
+   at NServiceBus.XmlDeserialization.Deserialize(Stream stream, IList`1 messageTypesToDeserialize)
+   at NServiceBus.XmlMessageSerializer.Deserialize(Stream stream, IList`1 messageTypesToDeserialize)
+   at NServiceBus.DeserializeMessageConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeMessageConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeMessageConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: bb310cd0-addf-419c-bb8a-abf300ba67fd
+2020-07-11 23:45:37.985 INFO  Logging to 'C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-11 23:45:38.374 INFO  Auditing processed messages to 'audit'
+2020-07-11 23:45:38.502 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-11 23:45:39.694 INFO  Executing 'C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-11 23:45:39.911 INFO  Executing saga creation scripts:
+C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql
+2020-07-11 23:55:42.876 INFO  Logging to 'C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-11 23:55:43.169 INFO  Auditing processed messages to 'audit'
+2020-07-11 23:55:43.287 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-11 23:55:44.337 INFO  Executing 'C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-11 23:55:44.930 INFO  Executing saga creation scripts:
+C:\Users\User\source\repos\Weight Watchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql

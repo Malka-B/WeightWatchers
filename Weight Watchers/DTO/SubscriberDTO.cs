@@ -19,6 +19,6 @@ namespace Weight_Watchers.DTO
         [Required]
         public string Password { get; set; }
 
-        public int Height { get; set; }
+        public float Height { get; set; }
     }
 }

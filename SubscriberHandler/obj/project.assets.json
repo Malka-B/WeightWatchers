@@ -9485,9 +9485,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Weight Watchers\\SubscriberHandler\\SubscriberHandler.csproj",
-      "projectName": "SubscriberHandler",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\SubscriberHandler\\SubscriberHandler.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Weight Watchers\\SubscriberHandler\\SubscriberNSB.csproj",
+      "projectName": "SubscriberNSB",
+      "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\SubscriberHandler\\SubscriberNSB.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\SubscriberHandler\\obj\\",
       "projectStyle": "PackageReference",

@@ -14,9 +14,9 @@ namespace Subscriber.Services.Models
 
         public float BMI { get; set; }
 
-        public int Height { get; set; }
+        public float Height { get; set; }
 
-        public decimal Weight { get; set; }
+        public float Weight { get; set; }
        
     }
 

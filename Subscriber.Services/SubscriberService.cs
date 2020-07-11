@@ -58,9 +58,15 @@ namespace Subscriber.Services
         {
             return await _subscriberRepository.CardExistAsync(cardId);
         }
-        public async Task UpdateBMIAsync(UpdateMeasure message)
+        public async Task<bool> UpdateBMIAsync(UpdateBMI message)
         {
-            await _subscriberRepository.UpdateBMIAsync(message);
+            bool isCardExist = await _subscriberRepository.CardExistAsync(message.CardId);
+            if (isCardExist)
+            {
+                await _subscriberRepository.UpdateBMIAsync(message);
+                return true;
+            }
+            return false;
         }
     }
 }

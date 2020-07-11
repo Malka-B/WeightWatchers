@@ -22,7 +22,7 @@ namespace Measure.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<MeasureEntity>()
                 .Property(p => p.Weight)
-                .HasColumnType("decimal(18,4)");
+                .HasColumnType("real");
         }
     }
 }

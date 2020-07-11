@@ -7,7 +7,7 @@ namespace Weight_Watchers.DTO
 {
     public class TrackingDTO
     {                
-        public decimal Weight { get; set; }
+        public float Weight { get; set; }
 
         public DateTime Date { get; set; }
 

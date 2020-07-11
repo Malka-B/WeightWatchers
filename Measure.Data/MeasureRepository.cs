@@ -43,7 +43,7 @@ namespace Measure.Data
 
             measure.Status = message.Status;
             measure.Comments = message.Comment;
-
+            
             await _measureContext.SaveChangesAsync();
         }
     }

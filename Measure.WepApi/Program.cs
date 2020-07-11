@@ -100,7 +100,7 @@ namespace Measure.WepApi
 
                var routing = transport.Routing();
                routing.RouteToEndpoint(
-                    messageType: typeof(UpdateMeasure),
+                    messageType: typeof(UpdateBMI),
                     destination: "Subscriber");
                //routing.RouteToEndpoint(typeof(UpdateMeasure), "SubscriberHandlerInMeasure");
                var subscriptions = persistence.SubscriptionSettings();

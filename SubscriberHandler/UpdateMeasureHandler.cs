@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SubscriberHandler
 {
-    public class UpdateMeasureHandler : IHandleMessages<UpdateMeasure>
+    public class UpdateMeasureHandler : IHandleMessages<UpdateBMI>
     {
         private readonly ISubscriberService _subscriberService;
         static ILog log = LogManager.GetLogger<BMIUpdatedSaga>();
@@ -19,7 +19,7 @@ namespace SubscriberHandler
         {
             _subscriberService = subscriberService;
         }
-        public async Task Handle(UpdateMeasure message, IMessageHandlerContext context)
+        public async Task Handle(UpdateBMI message, IMessageHandlerContext context)
          {
 
             log.Info($"In UpdateMeasureHandler: The measure {message.MeasureId} completed!");
