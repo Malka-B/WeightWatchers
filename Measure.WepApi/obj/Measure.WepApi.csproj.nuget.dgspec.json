@@ -1,37 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.WepApi\\Measure.WepApi.csproj": {}
+    "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.WepApi\\Measure.WepApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Data\\Measure.Data.csproj": {
+    "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Data\\Measure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Data\\Measure.Data.csproj",
+        "projectUniqueName": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Data\\Measure.Data.csproj",
         "projectName": "Measure.Data",
-        "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Data\\Measure.Data.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Data\\obj\\",
+        "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Data\\Measure.Data.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "F:\\Brix\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Services\\Measure.Services.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Services\\Measure.Services.csproj"
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Services\\Measure.Services.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Services\\Measure.Services.csproj"
               }
             }
           }
@@ -101,38 +102,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Services\\Measure.Services.csproj": {
+    "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Services\\Measure.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Services\\Measure.Services.csproj",
+        "projectUniqueName": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Services\\Measure.Services.csproj",
         "projectName": "Measure.Services",
-        "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Services\\Measure.Services.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Services\\obj\\",
+        "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Services\\Measure.Services.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "F:\\Brix\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\Weight Watchers\\Messages\\Messages.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Messages\\Messages.csproj"
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj"
               }
             }
           }
@@ -198,41 +200,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.WepApi\\Measure.WepApi.csproj": {
+    "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.WepApi\\Measure.WepApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.WepApi\\Measure.WepApi.csproj",
+        "projectUniqueName": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.WepApi\\Measure.WepApi.csproj",
         "projectName": "Measure.WepApi",
-        "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.WepApi\\Measure.WepApi.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.WepApi\\obj\\",
+        "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.WepApi\\Measure.WepApi.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.WepApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "F:\\Brix\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Data\\Measure.Data.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Data\\Measure.Data.csproj"
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Data\\Measure.Data.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Data\\Measure.Data.csproj"
               },
-              "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Services\\Measure.Services.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Measure.Services\\Measure.Services.csproj"
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Services\\Measure.Services.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Measure.Services\\Measure.Services.csproj"
               }
             }
           }
@@ -323,32 +326,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\Weight Watchers\\Messages\\Messages.csproj": {
+    "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Messages\\Messages.csproj",
+        "projectUniqueName": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj",
         "projectName": "Messages",
-        "projectPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Messages\\Messages.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\Weight Watchers\\Messages\\obj\\",
+        "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "F:\\Brix\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -392,7 +396,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
