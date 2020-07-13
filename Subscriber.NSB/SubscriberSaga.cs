@@ -25,7 +25,7 @@ namespace Subscriber.NSB
         }
         public async Task Handle(MeasureAdded message, IMessageHandlerContext context)
         {
-            bool isBMIUpdated = true; //await _subscriberService.UpdateBMIAsync(message);
+            bool isBMIUpdated = true;//await _subscriberService.UpdateBMIAsync(message);
             subscriber.MeasureId = message.MeasureId;
             if (isBMIUpdated)
             {                

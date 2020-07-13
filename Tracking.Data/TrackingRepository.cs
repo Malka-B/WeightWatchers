@@ -35,9 +35,15 @@ namespace Tracking.Data
             return true;
         }
 
-        public Task<List<TrackingModel>> GetTrackingsAsync(Paginator paginator)
+        public async Task<List<TrackingModel>> GetTrackingsAsync(Paginator paginator)
         {
-            throw new NotImplementedException();
+            List<TrackingEntity> trackingEntities = await _trackingContext.Trackings.ToListAsync<TrackingEntity>();
+            List<TrackingModel> trackingModels=new List<TrackingModel>();
+            for(int i=0;i<trackingEntities.Count;i++)
+            {
+                trackingModels.Add(_mapper.Map<TrackingModel>(trackingEntities[i]));
+            }
+            return trackingModels;
         }
     }
 }
