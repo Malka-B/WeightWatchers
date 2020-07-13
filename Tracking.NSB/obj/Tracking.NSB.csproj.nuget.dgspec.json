@@ -4,6 +4,146 @@
     "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.NSB\\Tracking.NSB.csproj": {}
   },
   "projects": {
+    "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj",
+        "projectName": "Messages",
+        "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "F:\\Brix\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj",
+        "projectName": "Tracking.Data",
+        "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "F:\\Brix\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.NSB\\Tracking.NSB.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +170,103 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj"
+              },
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj"
+              },
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NServiceBus.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NServiceBus.Persistence.Sql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "NServiceBus.RabbitMQ": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj",
+        "projectName": "Tracking.Services",
+        "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Tracking.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "F:\\Brix\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj": {
+                "projectPath": "F:\\Brix\\watcers weight final\\WeightWatchers\\Messages\\Messages.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

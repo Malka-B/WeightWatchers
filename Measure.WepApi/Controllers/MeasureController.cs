@@ -34,13 +34,13 @@ namespace Measure.WepApi.Controllers
         {
             MeasureModel measureModel = _mapper.Map<MeasureModel>(measureDTO);
             int measureId = await _measureService.AddMeasureAsync(measureModel);
-            UpdateBMI updateBMI = new UpdateBMI
+            MeasureAdded measureAdded= new MeasureAdded
             {
                 MeasureId = measureId,
                 CardId = measureModel.CardId,
                 Weight = measureModel.Weight
             };
-           await _messageSession.Send(updateBMI)
+           await _messageSession.Publish(measureAdded)
                 .ConfigureAwait(false);
 
             return Ok("הפעולה נקלטה בהצלחה!");            

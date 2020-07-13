@@ -61,6 +61,8 @@ F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Create.sql
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Drop.sql
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1\Measure.Data.deps.json
+F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1\Measure.Data.runtimeconfig.json
+F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1\Measure.Data.runtimeconfig.dev.json
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1\Measure.Data.dll
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1\Measure.Data.pdb
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\bin\Debug\netcoreapp3.1\Measure.Services.dll
@@ -74,3 +76,4 @@ F:\Brix\watcers weight final\WeightWatchers\Measure.Data\obj\Debug\netcoreapp3.1
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\obj\Debug\netcoreapp3.1\Measure.Data.csproj.CopyComplete
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\obj\Debug\netcoreapp3.1\Measure.Data.dll
 F:\Brix\watcers weight final\WeightWatchers\Measure.Data\obj\Debug\netcoreapp3.1\Measure.Data.pdb
+F:\Brix\watcers weight final\WeightWatchers\Measure.Data\obj\Debug\netcoreapp3.1\Measure.Data.genruntimeconfig.cache

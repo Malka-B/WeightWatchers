@@ -8,7 +8,6 @@ namespace Messages.Events
     public class BMIUpdated
     {
         public string Status { get; set; }
-
         public int MeasureId { get; set; }
     }
 }
