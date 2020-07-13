@@ -27,53 +27,19 @@ namespace Tracking.Api.Controllers
             _mapper = mapper;
             _messageSession = messageSession;
         }
-        // GET: api/<controller>
         [HttpGet]
-        //GET /tracking/:cardId? page =<> &size =<>
-
-
-        public IEnumerable<string> Get([FromQuery] Paginator paginator = null)
+   
+        public async Task<List<TrackingDTO>> Get([FromQuery] Paginator paginator = null)
         {
-            return new string[] { "value1", "value2" };
+            List<TrackingModel> trackingModels = await _trackingService.GetTrackingsAsync(paginator);
+            List<TrackingDTO> trackingDTOs = new List<TrackingDTO>();
+            for(int i=0;i<trackingModels.Count;i++)
+            {
+                trackingDTOs.Add(_mapper.Map<TrackingDTO>(trackingModels[i]));
+            }
+            return trackingDTOs;
         }
 
-        // GET api/<controller>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<controller>
-        [HttpPost("measure")]
-      
-
-        //public async Task<ActionResult> AddMeasureAsync([FromBody] TrackingDTO trackingDTO)
-        //{
-        //    //TrackingModel trackingModel = _mapper.Map<TrackingModel>(trackingDTO);
-        //    //int measureId = await _measureService.AddMeasureAsync(measureModel);
-        //    //MeasureAdded measureAdded = new MeasureAdded
-        //    //{
-        //    //    MeasureId = measureId,
-        //    //    CardId = measureModel.CardId,
-        //    //    Weight = measureModel.Weight
-        //    //};
-        //    //await _messageSession.Publish(measureAdded)
-        //    //     .ConfigureAwait(false);
-
-        //    //return Ok("הפעולה נקלטה בהצלחה!");
-
-        //}
-        // PUT api/<controller>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+ 
     }
 }
