@@ -24,9 +24,9 @@ namespace Tracking.Services
             return await _trackingRepository.AddTrackingAsync(trackingModel);
         }
 
-        public Task<List<TrackingModel>> GetTrackingsAsync(Paginator paginator)
+        public async Task<List<TrackingModel>> GetTrackingsAsync(Paginator paginator)
         {
-            throw new NotImplementedException();
+            return await _trackingRepository.GetTrackingsAsync(paginator);
         }
     }
 }

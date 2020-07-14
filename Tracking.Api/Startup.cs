@@ -35,10 +35,6 @@ namespace Tracking.Api
 
             var mappingConfig = new MapperConfiguration(mc =>
             {
-                ///
-                ///
-                ///
-                ///
                 mc.AddProfile(new TrackingProfile());
             });
 
