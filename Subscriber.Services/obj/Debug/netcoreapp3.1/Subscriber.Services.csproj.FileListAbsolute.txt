@@ -70,3 +70,39 @@ F:\Brix\watcers weight final\WeightWatchers\Subscriber.Services\obj\Debug\netcor
 F:\Brix\watcers weight final\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.csproj.CopyComplete
 F:\Brix\watcers weight final\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.dll
 F:\Brix\watcers weight final\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Subscription_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Subscription_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Timeout_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Timeout_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Outbox_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Outbox_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Subscription_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Subscription_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Timeout_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Timeout_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Outbox_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Outbox_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Subscription_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Subscription_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Timeout_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Timeout_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Outbox_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Outbox_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Subscription_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Subscription_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Create.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Drop.sql
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Subscriber.Services.deps.json
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Subscriber.Services.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Subscriber.Services.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.csprojAssemblyReference.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.AssemblyInfo.cs
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.csproj.CopyComplete
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.Services\obj\Debug\netcoreapp3.1\Subscriber.Services.pdb

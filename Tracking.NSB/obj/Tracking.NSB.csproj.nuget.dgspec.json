@@ -4,6 +4,144 @@
     "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.NSB\\Tracking.NSB.csproj": {}
   },
   "projects": {
+    "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Messages\\Messages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Messages\\Messages.csproj",
+        "projectName": "Messages",
+        "projectPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Messages\\Messages.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Messages\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj",
+        "projectName": "Tracking.Data",
+        "projectPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.NSB\\Tracking.NSB.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +167,102 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Messages\\Messages.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Messages\\Messages.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Data\\Tracking.Data.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NServiceBus.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NServiceBus.Persistence.Sql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "NServiceBus.RabbitMQ": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj",
+        "projectName": "Tracking.Services",
+        "projectPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Services\\Tracking.Services.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Tracking.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Messages\\Messages.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\WeightWatchersFinal\\WeightWatchers\\Messages\\Messages.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

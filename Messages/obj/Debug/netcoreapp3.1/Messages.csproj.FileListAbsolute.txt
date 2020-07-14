@@ -10,9 +10,17 @@ C:\Users\User\source\repos\Weight Watchers\Messages\obj\Debug\netcoreapp3.1\Mess
 F:\Brix\watcers weight final\WeightWatchers\Messages\bin\Debug\netcoreapp3.1\Messages.deps.json
 F:\Brix\watcers weight final\WeightWatchers\Messages\bin\Debug\netcoreapp3.1\Messages.dll
 F:\Brix\watcers weight final\WeightWatchers\Messages\bin\Debug\netcoreapp3.1\Messages.pdb
-F:\Brix\watcers weight final\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.csprojAssemblyReference.cache
 F:\Brix\watcers weight final\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.csproj.CoreCompileInputs.cache
 F:\Brix\watcers weight final\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.AssemblyInfoInputs.cache
 F:\Brix\watcers weight final\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.AssemblyInfo.cs
 F:\Brix\watcers weight final\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.dll
 F:\Brix\watcers weight final\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\bin\Debug\netcoreapp3.1\Messages.deps.json
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.csprojAssemblyReference.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.AssemblyInfo.cs
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Messages\obj\Debug\netcoreapp3.1\Messages.pdb

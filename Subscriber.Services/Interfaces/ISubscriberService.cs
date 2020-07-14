@@ -1,4 +1,5 @@
 ﻿using Messages.Commands;
+using Messages.Events;
 using Subscriber.Services.Models;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,6 @@ namespace Subscriber.Services
         Task<CardModel> GetCardAsync(int id);
         Task<int> LoginAsync(string email, string password);
         Task<bool> CardExistAsync(int cardId);
-        Task<bool> UpdateBMIAsync(UpdateBMI message);
+        Task<bool> UpdateBMIAsync(MeasureAdded message);
     }
 }

@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
+using Measure.Services;
 using Measure.Services.Interfaces;
 using Messages.Events;
 using NServiceBus;
 
-namespace Measure.Data
+namespace Measure.WepApi
 {
-    class SubscriberUpdatedHandler : IHandleMessages<SubscriberUpdated>
+    public class MeasureHandler : IHandleMessages<SubscriberUpdated>
     {
-        IMeasureService _measureService;
+        private readonly IMeasureService _measureService;
 
-        public SubscriberUpdatedHandler(IMeasureService measureService)
+        public MeasureHandler(IMeasureService measureService)
         {
             _measureService = measureService;
         }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Messages.Commands;
+using Messages.Events;
 using Microsoft.EntityFrameworkCore;
 using Subscriber.Data.Entities;
 using Subscriber.Services;
@@ -89,7 +90,7 @@ namespace Subscriber.Data
 
 
 
-        public async Task UpdateBMIAsync(UpdateBMI message)
+        public async Task UpdateBMIAsync(MeasureAdded message)
         {
             CardEntity card = await _weightWatchersContext.Card
                 .FirstOrDefaultAsync(c => c.Id == message.CardId);

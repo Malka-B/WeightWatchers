@@ -1,0 +1,11 @@
+﻿2020-07-14 10:39:40.750 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-14 10:39:42.768 INFO  Auditing processed messages to 'audit'
+2020-07-14 10:39:43.560 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-14 10:41:46.099 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-14 10:41:47.291 INFO  Auditing processed messages to 'audit'
+2020-07-14 10:41:47.543 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-14 10:41:50.642 INFO  Executing 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-14 10:41:51.208 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql

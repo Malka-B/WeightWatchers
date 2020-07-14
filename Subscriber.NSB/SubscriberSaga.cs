@@ -12,7 +12,7 @@ using System.Transactions;
 namespace Subscriber.NSB
 {
     public class SubscriberSaga : Saga<SubscriberData>,
-        IAmStartedByMessages<UpdateBMI>,
+        IAmStartedByMessages<MeasureAdded>,
         IHandleMessages<TrackingsUpdated>
     {
         private readonly ISubscriberService _subscriberService;
@@ -23,7 +23,7 @@ namespace Subscriber.NSB
         {
             _subscriberService = subscriberService;
         }
-        public async Task Handle(UpdateBMI message, IMessageHandlerContext context)
+        public async Task Handle(MeasureAdded message, IMessageHandlerContext context)
         {
             bool isBMIUpdated = await _subscriberService.UpdateBMIAsync(message);
             subscriber.MeasureId = message.MeasureId;
@@ -49,7 +49,7 @@ namespace Subscriber.NSB
 
         protected override void ConfigureHowToFindSaga(SagaPropertyMapper<SubscriberData> mapper)
         {
-            mapper.ConfigureMapping<UpdateBMI>(message => message.MeasureId)
+            mapper.ConfigureMapping<MeasureAdded>(message => message.MeasureId)
                 .ToSaga(sagaData => sagaData.MeasureId);
 
             mapper.ConfigureMapping<TrackingsUpdated>(message => message.MeasureId)
