@@ -10,3 +10,15 @@ F:\Brix\watcers weight final\WeightWatchers\Tracking.Services\obj\Debug\netcorea
 F:\Brix\watcers weight final\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.csproj.CopyComplete
 F:\Brix\watcers weight final\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.dll
 F:\Brix\watcers weight final\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\bin\Debug\netcoreapp3.1\Tracking.Services.deps.json
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\bin\Debug\netcoreapp3.1\Tracking.Services.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\bin\Debug\netcoreapp3.1\Tracking.Services.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.csprojAssemblyReference.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.AssemblyInfo.cs
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.csproj.CopyComplete
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Services\obj\Debug\netcoreapp3.1\Tracking.Services.csproj.CoreCompileInputs.cache

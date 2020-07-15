@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Tracking.Api.Profiles;
 using Tracking.Data;
+using Tracking.Services;
+using Tracking.Services.Interfaces;
 
 namespace Tracking.Api
 {
@@ -29,18 +31,23 @@ namespace Tracking.Api
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<TrackingContext>(options =>
-                          options.UseSqlServer(
-                              Configuration.GetConnectionString("TrackingConnection")));
+            services.AddScoped<ITrackingService, TrackingService>();
+            services.AddScoped<ITrackingRepository, TrackingRepository>();
 
-            var mappingConfig = new MapperConfiguration(mc =>
-            {
-                mc.AddProfile(new TrackingProfile());
-            });
+            //var mappingConfig = new MapperConfiguration(mc =>
+            //{
+            //    mc.AddProfile(new TrackingProfile());
+            //});
 
-            IMapper mapper = mappingConfig.CreateMapper();
-            services.AddSingleton(mapper);
+            //IMapper mapper = mappingConfig.CreateMapper();
+            //services.AddSingleton(mapper);
 
+            //services.AddDbContext<TrackingContext>(
+            //      options => options.UseSqlServer(Configuration.GetConnectionString("TrackingConnection")));
+
+            //services.AddDbContext<TrackingContext>(
+            //      options => options.UseSqlServer("Server = C1; Database = Tracking ;Trusted_Connection=True; "));
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,9 +72,7 @@ namespace Tracking.Api
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllers();
             });
         }
     }

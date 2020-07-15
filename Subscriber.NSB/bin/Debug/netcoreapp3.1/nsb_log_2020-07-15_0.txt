@@ -1,0 +1,56 @@
+﻿2020-07-15 15:03:40.241 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:03:40.818 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:03:41.019 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:03:42.642 INFO  Executing 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-15 15:03:43.027 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql
+2020-07-15 15:32:52.539 WARN  'Subscriber Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-15 15:32:52.539 WARN  'Subscriber MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-15 15:32:54.057 INFO  Attempting to reconnect in 10 seconds.
+2020-07-15 15:32:54.074 WARN  The circuit breaker for 'Subscriber MessagePump' is now in the armed state
+2020-07-15 15:33:20.228 INFO  Connection to the broker reestablished successfully.
+2020-07-15 15:33:20.288 INFO  The circuit breaker for 'Subscriber MessagePump' is now disarmed
+2020-07-15 15:44:09.883 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:44:10.810 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:44:11.259 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:44:14.778 INFO  Executing 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-15 15:44:15.284 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql
+2020-07-15 15:45:21.945 INFO  in Subscriber Saga, got measure/ id: 21
+2020-07-15 15:50:38.902 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:50:40.151 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:50:40.797 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:50:43.115 INFO  Executing 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-15 15:50:43.648 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql
+2020-07-15 15:56:48.853 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:56:51.216 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:56:52.381 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:56:56.450 INFO  Executing 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-15 15:56:57.844 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql
+2020-07-15 15:59:40.860 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:59:41.527 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:59:41.815 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:59:43.904 INFO  Executing 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-15 15:59:44.170 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Subscriber.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\SubscriberSaga_Create.sql

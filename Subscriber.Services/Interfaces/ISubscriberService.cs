@@ -14,6 +14,6 @@ namespace Subscriber.Services
         Task<CardModel> GetCardAsync(int id);
         Task<int> LoginAsync(string email, string password);
         Task<bool> CardExistAsync(int cardId);
-        Task<bool> UpdateBMIAsync(MeasureAdded message);
+        Task<float> UpdateBMIAsync(MeasureAdded message);
     }
 }

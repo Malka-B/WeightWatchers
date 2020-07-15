@@ -18,8 +18,8 @@ namespace Subscriber.Data
 
         public DbSet<SubscriberEntity> Subscriber { get; set; }
         public DbSet<CardEntity> Card { get; set; }
-        
 
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.Entity<SubscriberEntity>()

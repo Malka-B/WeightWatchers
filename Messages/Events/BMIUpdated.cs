@@ -10,7 +10,6 @@ namespace Messages.Events
         public int MeasureId { get; set; }
         public int CardId { get; set; }
         public float Weight { get; set; }
-        public float BMI { get; set; }
-        public string Status { get; set; }
+        public float BMI { get; set; }        
     }
 }

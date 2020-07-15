@@ -27,14 +27,15 @@ namespace Tracking.Data.Migrations
 
                     b.Property<float>("BMI");
 
+                    b.Property<int>("CardId");
+
                     b.Property<string>("Comments");
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<decimal>("Weight")
-                        .HasColumnType("decimal(18,4)");
+                    b.Property<int>("Trend");
 
-                    b.Property<int>("trend");
+                    b.Property<float>("Weight");
 
                     b.HasKey("Id");
 

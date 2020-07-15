@@ -12,6 +12,8 @@ namespace Tracking.Services.Models
 
         public int trend { get; set; }
 
+        public int CardId { get; set; }
+
         public float BMI { get; set; }
 
         public string Comments { get; set; }

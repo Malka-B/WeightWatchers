@@ -12,3 +12,17 @@ F:\Brix\watcers weight final\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.
 F:\Brix\watcers weight final\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.csproj.CopyComplete
 F:\Brix\watcers weight final\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.dll
 F:\Brix\watcers weight final\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Data.deps.json
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Data.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Data.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Services.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Services.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.csprojAssemblyReference.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.csproj.CopyComplete
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.dll
+C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.pdb

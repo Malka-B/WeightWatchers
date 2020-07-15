@@ -6,7 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
     <PackageReference Include="NServiceBus" Version="7.3.0" />
     <PackageReference Include="NServiceBus.Extensions.DependencyInjection" Version="1.0.1" />
     <PackageReference Include="NServiceBus.Extensions.Hosting" Version="1.0.1" />
@@ -16,6 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Messages\Messages.csproj" />
+    <ProjectReference Include="..\Tracking.Api\Tracking.Api.csproj" />
     <ProjectReference Include="..\Tracking.Data\Tracking.Data.csproj" />
     <ProjectReference Include="..\Tracking.Services\Tracking.Services.csproj" />
   </ItemGroup>

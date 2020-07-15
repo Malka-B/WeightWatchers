@@ -18,6 +18,10 @@ namespace Subscriber.Data
         private readonly WeightWatchersContext _weightWatchersContext;
         private readonly IMapper _mapper;
 
+        public SubscriberRepository()
+        {
+        }
+
         public SubscriberRepository(WeightWatchersContext weightWatchersContext, IMapper mapper)
         {
             _weightWatchersContext = weightWatchersContext;
@@ -26,13 +30,22 @@ namespace Subscriber.Data
 
         public async Task<bool> CardExistAsync(int cardId)
         {
-            CardEntity card = await _weightWatchersContext.Card
-                .FirstOrDefaultAsync(c => c.Id == cardId);
-            if (card != null)
+            try
             {
-                return true;
+                var v = await _weightWatchersContext.Card.ToListAsync();
+                CardEntity card = await _weightWatchersContext.Card
+                    .FirstOrDefaultAsync(c => c.Id == cardId);
+                if (card != null)
+                {
+                    return true;
+                }
+                return false;
             }
-            return false;
+            catch(Exception e)
+            {
+                throw new Exception();
+            }
+          
         }
 
         public async Task<CardModel> GetCardAsync(int id)
@@ -90,7 +103,7 @@ namespace Subscriber.Data
 
 
 
-        public async Task UpdateBMIAsync(MeasureAdded message)
+        public async Task<float> UpdateBMIAsync(MeasureAdded message)
         {
             CardEntity card = await _weightWatchersContext.Card
                 .FirstOrDefaultAsync(c => c.Id == message.CardId);
@@ -99,6 +112,7 @@ namespace Subscriber.Data
             card.UpdateDate = DateTime.Now;
             card.Weight = message.Weight;
             await _weightWatchersContext.SaveChangesAsync();
+            return card.BMI;
         }
 
         public async Task<bool> ValidateLoginAsync(string email, string password)

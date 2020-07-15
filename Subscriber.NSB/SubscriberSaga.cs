@@ -17,7 +17,7 @@ namespace Subscriber.NSB
     {
         private readonly ISubscriberService _subscriberService;
         static ILog log = LogManager.GetLogger<SubscriberSaga>();
-        private SubscriberUpdated subscriber = new SubscriberUpdated();
+        static SubscriberUpdated subscriber = new SubscriberUpdated();
 
         public SubscriberSaga(ISubscriberService subscriberService)
         {
@@ -25,16 +25,27 @@ namespace Subscriber.NSB
         }
         public async Task Handle(MeasureAdded message, IMessageHandlerContext context)
         {
-            bool isBMIUpdated = await _subscriberService.UpdateBMIAsync(message);
-            subscriber.MeasureId = message.MeasureId;
-            if (isBMIUpdated)
+            float isBMIUpdated = await _subscriberService.UpdateBMIAsync(message);
+
+            log.Info($"in Subscriber Saga, got measure/ id: {message.MeasureId}");
+           
+            if (isBMIUpdated != -1)
             {                
                 subscriber.Comment = "BMI updated. ";
                 Data.IsBMIUpdated = true;
+                BMIUpdated bMIUpdated = new BMIUpdated
+                {
+                    MeasureId = message.MeasureId,
+                    BMI = isBMIUpdated,
+                    CardId = message.CardId,
+                    Weight = message.Weight
+                };
+                await context.Publish(bMIUpdated);
             }
             else
             {
                 subscriber.Comment = "update BMI failed. ";
+                //send to error queue
                 Data.IsBMIUpdated = false;
             }
             
@@ -43,7 +54,18 @@ namespace Subscriber.NSB
 
         public async Task Handle(TrackingsUpdated message, IMessageHandlerContext context)
         {
-            Data.IsTrackingUpdated = true;
+            subscriber.MeasureId = message.MeasureId;
+            if (message.succeeded)
+            {
+                subscriber.Comment += "Tracking added";
+                Data.IsTrackingUpdated = true;
+            }
+            else
+            {
+                subscriber.Comment += "Tracking failed";
+                //send to error q and rollback
+                Data.IsTrackingUpdated = false;
+            }
             await ProcessOrder(context);
         }
 
@@ -60,22 +82,28 @@ namespace Subscriber.NSB
         {
             if (Data.IsBMIUpdated && Data.IsTrackingUpdated)
             {
-                subscriber.Status = "Succeeded";
+                subscriber.Status = "Succeeded";                
                 await context.Publish(subscriber);
                 MarkAsComplete();
             }
-            if (Data.IsBMIUpdated )
-            {
-                subscriber.Status = "Succeeded";
-                await context.Publish(subscriber);
-                MarkAsComplete();
-            }
-            else 
-            {
-                subscriber.Status = "Failed";
-                await context.Publish(subscriber);
-                MarkAsComplete();
-            }
+            //else(Data.IsBMIUpdated && Data.IsTrackingUpdated == false || Data.IsBMIUpdated== false && Data.IsTrackingUpdated)
+            //{
+            //    subscriber.Status = "Failed";
+            //    await context.Publish(subscriber);
+            //    MarkAsComplete();
+            //}
+            //if (Data.IsBMIUpdated )
+            //{
+            //    subscriber.Status = "Succeeded";
+            //    await context.Publish(subscriber);
+            //    MarkAsComplete();
+            //}
+            //else 
+            //{
+            //    subscriber.Status = "Failed";
+            //    await context.Publish(subscriber);
+            //    MarkAsComplete();
+            //}
         }
     }
 }

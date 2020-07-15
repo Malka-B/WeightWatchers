@@ -9,12 +9,13 @@ namespace Tracking.Data.Entities
     {
         public int Id { get; set; }
 
-        [Column(TypeName = "decimal(18,4)")]
-        public decimal Weight { get; set; }
+        public int CardId { get; set; }
+
+        public float Weight { get; set; }
 
         public DateTime Date { get; set; }
 
-        public int trend { get; set; }
+        public int Trend { get; set; }
 
         public float BMI { get; set; }
 

@@ -3,6 +3,8 @@ using Messages.Events;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Tracking.Data.Entities;
@@ -25,14 +27,15 @@ namespace Tracking.Data
 
         public async Task<bool> AddTrackingAsync(TrackingModel trackingModel)
         {
-            TrackingEntity trackingEntity = _mapper.Map<TrackingEntity>(trackingModel);
+                TrackingEntity trackingEntity = _mapper.Map<TrackingEntity>(trackingModel);                
+                //TrackingEntity tracking = await _trackingContext.Trackings
+                //    .LastOrDefaultAsync(t => t.CardId == trackingEntity.CardId);
+
             await _trackingContext.Trackings.AddAsync(trackingEntity);
             await _trackingContext.SaveChangesAsync();
-            TrackingEntity tracking = await _trackingContext.Trackings
-                .FirstOrDefaultAsync(t => t.BMI == trackingEntity.BMI
-                && t.Comments == trackingEntity.Comments
-                && t.Date == trackingEntity.Date);
+
             return true;
+                       
         }
 
         public async Task<List<TrackingModel>> GetTrackingsAsync(Paginator paginator)

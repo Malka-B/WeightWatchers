@@ -13,7 +13,7 @@ namespace Subscriber.Services
         Task<bool> RegisterAsync(SubscriberModel register);
         Task<CardModel> GetCardAsync(int id); 
         Task<int> LoginAsync(string email, string password);
-        Task UpdateBMIAsync(MeasureAdded message);
+        Task<float> UpdateBMIAsync(MeasureAdded message);
         Task<bool> CardExistAsync(int cardId);
         Task<bool> ValidateLoginAsync(string email, string password);
         Task<bool> IsEmailValiAsync(string email);

@@ -1,0 +1,41 @@
+﻿2020-07-15 13:30:10.757 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:03:35.512 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:03:36.187 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:03:37.176 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:32:50.857 WARN  'Tracking MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-15 15:32:50.857 WARN  'Tracking Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-15 15:32:52.459 WARN  The circuit breaker for 'Tracking MessagePump' is now in the armed state
+2020-07-15 15:32:52.460 INFO  Attempting to reconnect in 10 seconds.
+2020-07-15 15:33:20.225 INFO  Connection to the broker reestablished successfully.
+2020-07-15 15:33:23.038 INFO  The circuit breaker for 'Tracking MessagePump' is now disarmed
+2020-07-15 15:44:02.949 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:44:04.161 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:44:04.630 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:50:34.762 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:50:35.788 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:50:36.298 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:56:48.853 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:56:50.823 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:56:51.867 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-15 15:59:37.735 INFO  Logging to 'C:\Users\User\Desktop\WeightWatchersFinal\WeightWatchers\Tracking.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-15 15:59:38.906 INFO  Auditing processed messages to 'audit'
+2020-07-15 15:59:39.623 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04

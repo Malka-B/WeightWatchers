@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Subscriber.Services
 {
     public class SubscriberService : ISubscriberService
@@ -45,7 +46,7 @@ namespace Subscriber.Services
 
         public async Task<bool> RegisterAsync(SubscriberModel subscriberModel)
         {
-            //subscriberModel.Id = Guid.NewGuid();
+            
             bool isEmailValid = await _subscriberRepository.IsEmailValiAsync(subscriberModel.Email);
             if (isEmailValid)
             {
@@ -59,15 +60,15 @@ namespace Subscriber.Services
             return await _subscriberRepository.CardExistAsync(cardId);
         }
 
-        public async Task<bool> UpdateBMIAsync(MeasureAdded message)
+        public async Task<float> UpdateBMIAsync(MeasureAdded message)
         {
             bool isCardExist = await _subscriberRepository.CardExistAsync(message.CardId);
             if (isCardExist)
             {
-                await _subscriberRepository.UpdateBMIAsync(message);
-                return true;
+                var bmi = await _subscriberRepository.UpdateBMIAsync(message);
+                return bmi;
             }
-            return false;
+            return -1;
         }
     }
 }

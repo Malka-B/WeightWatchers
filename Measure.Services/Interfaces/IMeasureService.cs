@@ -12,5 +12,6 @@ namespace Measure.Services.Interfaces
         Task<int> AddMeasureAsync(MeasureModel measureModel);
 
         Task UpdateStatusAsync(SubscriberUpdated message);
+        void sendEmail();
     }
 }
